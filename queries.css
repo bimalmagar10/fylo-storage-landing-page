@@ -1,0 +1,44 @@
+@media only screen and (max-width:37.5em){
+	.container {
+		background-image: url('./images/bg-mobile.png');
+	}
+	.card {
+		flex-direction: column;
+		width: 100%;
+	}
+	.card__first {
+		margin-right: 0;
+		margin-bottom: 2rem;
+		padding: 4rem 12rem 4rem 4rem;
+	}
+	.card__second {
+       align-self: center;
+       padding:4rem 4rem 6rem 4rem;
+	}
+	.card__storage-available {
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%,0);
+		width:50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+		-webkit-animation-fill-mode: none;
+		animation-fill-mode: none;
+	}
+	.card__storage-available::after {
+		height: 0;
+		width: 0;
+		top: 0;
+		clip-path:none;
+	}
+}
+@media only screen and (max-width: 21.5625em){
+	html {
+		font-size: 50%;
+	}
+	.card__first {
+		padding: 4rem 10rem 4rem 4rem;
+	}
+}

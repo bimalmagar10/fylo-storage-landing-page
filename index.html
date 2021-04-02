@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./animate.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./queries.css">
+  
+  <title>Fylo data storage component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- You’ve used 815 GB of your storage
+
+  185 GB Left
+  
+  0 GB
+  1000 GB -->
+  <div class="container">
+    <div class="card">
+      <div class="card__first animate__animated animate__delay-1s animate__backInLeft">
+        <img src="./images/logo.svg" alt="This is main Logo" class="card__logo">
+        <div class="card__icons">
+          <a href="#" class="card__link">
+            <img src="./images/icon-document.svg" alt="This is document icon" class="card__icons--1">
+          </a>
+          <a href="#" class="card__link">
+            <img src="./images/icon-folder.svg" alt="This is floder icon" class="card__icons--2">
+          </a>
+          <a href="#" class="card__link">
+            <img src="./images/icon-upload.svg" alt="This is upload icon" class="card__icons--3">
+          </a>
+        </div>
+      </div>
+      <div class="card__second animate__animated animate__delay-1s animate__backInRight">
+        <p class="card__storage-msg">You’ve used <span class="card__current-storage">815 GB</span> of your storage</p>
+        <div class="card__storage-available animate__animated animate__pulse animate__delay-4s animate__repeat-3"><span class="card__storage-available--count">185</span> GB left</div>
+        <div class="card__progress">
+          <div class="card__progress--bar"></div>
+        </div>
+        <div class="card__storage-count">
+          <span class="card__storage--min">0 GB</span>
+          <span class="card__storage--max">1000 GB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
